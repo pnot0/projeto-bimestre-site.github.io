@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "VCR-OSD";
+    src: url("resources/fonts/VCR_OSD_MONO_1.001.woff2");
+  }
+  
+
+body{
+    color: rgb(255, 255, 255);
+    font-family: "VCR-OSD", monospace;
+    font-size: 32px;
+    background-color: rgb(20, 20, 20);
+}
+
+h1{
+    text-align: center;
+    margin: 100px;
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-direction: column;
+}
+
+.logo img{
+    width: auto;
+    height: 120px;
+}
+
+.autor{
+    font-size: 24px;
+    text-align: center;
+}
+
+.steam-redirect button{
+    font-family: "VCR-OSD", monospace;
+    font-size: 28px;
+    margin-top: 60px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.steam-redirect button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 10px #ff212166;
+}
+
+.main-container{
+    margin: 150px;
+    margin-top: 20px;
+}
+
+.container-mankind{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 40px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    transition: all .3s ease-out;
+}
+
+.container-mankind:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.container-blood:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.container-hell:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.mankind-text-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.blood-text-title{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.hell-text-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.mankind-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.blood-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.hell-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.mankind-text p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.blood-text p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.hell-text p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.mankind-text{
+    float: right;
+    margin: 5px;
+}
+
+.blood-text{
+    float: left;
+    margin: 5px;
+}
+
+.hell-text{
+    float: right;
+    margin: 5px;
+}
+
+#mankind-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.container-blood{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+    transition: all .3s ease-out;
+}
+
+#blood-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.container-hell{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    transition: all .3s ease-out;
+}
+
+#hell-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+
+
+#developed{
+    transition: all .3s ease-out;
+}
+
+#distributed{
+    transition: all .3s ease-out;
+}
+
+#developed:hover{
+    color: rgb(255, 25, 15);
+}
+
+#distributed:hover{
+    color: rgb(255, 25, 15);
+}
+
+
+
+@media (max-width: 1600px) {
+    .container-mankind{
+        margin-right: 75px;
+    }
+
+    .container-blood{
+        margin-left: 75px;
+    }
+
+    .container-hell{
+        margin-right: 75px;
+    }
+
+    #mankind-gif{
+        width: 200%;
+    }
+
+    #blood-gif{
+        width: 200%;
+    }
+
+    #hell-gif{
+        width: 200%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-mankind{
+        margin-right: 25px;
+    }
+
+    .container-blood{
+        margin-left: 25px;
+    }
+
+    .container-hell{
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container-mankind{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .mankind-text-title{
+        justify-content: center;
+    }
+
+    .container-blood{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .blood-text-title{
+        justify-content: center;
+    }
+
+    .container-hell{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .hell-text-title{
+        justify-content: center;
+    }
+
+    #mankind-gif{
+        width: auto;
+        height: auto;
+    }
+
+    #blood-gif{
+        width: auto;
+        height: auto;
+    }
+
+    #hell-gif{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .main-container{
+        margin: 0;
+    }
+
+    .main-container h1{
+        font-size: 32px;
+    }
+
+    .logo img{
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
+
+    .mankind-text-title h3{
+        font-size: 26px;
+    }
+
+    .blood-text h3{
+        font-size: 26px;
+    }
+
+    .hell-text h3{
+        font-size: 26px;
+    }
+
+    .mankind-text p{
+        font-size: 16px;
+    }
+
+    .blood-text p{
+        font-size: 16px;
+    }
+
+    .hell-text p{
+        font-size: 16px;
+    }
+}
