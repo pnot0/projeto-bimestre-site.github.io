@@ -45,8 +45,8 @@ function mankindTitleSecondLoop() {
 
 function mankindTitleReseter(){
   setTimeout(function(){
-    document.getElementById("mankind-is-title").innerHTML = ""
-    document.getElementById("mankind-dead-title").innerHTML = ""
+    document.getElementById("mankind-is-title").innerHTML = "‎ "
+    document.getElementById("mankind-dead-title").innerHTML = "‎ "
   }, 1500)
 
   setTimeout(function(){
@@ -86,8 +86,8 @@ function bloodTitleSecondLoop() {
 
 function bloodTitleReseter(){
   setTimeout(function(){
-    document.getElementById("blood-is-title").innerHTML = ""
-    document.getElementById("blood-fuel-title").innerHTML = ""
+    document.getElementById("blood-is-title").innerHTML = "‎ "
+    document.getElementById("blood-fuel-title").innerHTML = "‎ "
   }, 1500)
 
   setTimeout(function(){
@@ -114,7 +114,7 @@ function hellTitleLoop() {
 
 function hellTitleReseter(){
   setTimeout(function(){
-    document.getElementById("hell-title").innerHTML = ""
+    document.getElementById("hell-title").innerHTML = "‎ "
   }, 1500)
 
   setTimeout(function(){
