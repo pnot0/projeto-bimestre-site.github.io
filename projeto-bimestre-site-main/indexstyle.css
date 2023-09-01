@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "VCR-OSD";
+    src: url("resources/fonts/VCR_OSD_MONO_1.001.woff2");
+  }
+  
+
+body{
+    color: rgb(255, 255, 255);
+    font-family: "VCR-OSD", monospace;
+    font-size: 32px;
+    background-color: rgb(20, 20, 20);
+}
+
+h1{
+    text-align: center;
+    margin: 100px;
+}
+
+
+.logo img{
+    width: auto;
+    height: 120px;
+}
+
+.autor{
+    font-size: 24px;
+    text-align: center;
+}
+
+#developed{
+    transition: all .3s ease-out;
+}
+
+#developed:hover{
+    color: rgb(255, 25, 15);
+}
+
+#distributed{
+    transition: all .3s ease-out;
+}
+
+#distributed:hover{
+    color: rgb(255, 25, 15);
+}
+
+.steam-redirect button{
+    font-family: "VCR-OSD", monospace;
+    font-size: 28px;
+    margin-top: 60px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.steam-redirect button:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 10px #ff212166;
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-direction: column;
+}
+
+.main-container{
+    margin: 150px;
+    margin-top: 20px;
+}
+
+.container-mankind{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 40px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    transition: all .3s ease-out;
+}
+
+.container-mankind:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.mankind-text-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mankind-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.mankind-text p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.mankind-text{
+    float: right;
+    margin: 5px;
+}
+
+#mankind-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+
+
+
+.container-blood{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: right;
+    transition: all .3s ease-out;
+}
+
+.container-blood:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.blood-text-title{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blood-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.blood-text p{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.blood-text{
+    float: left;
+    margin: 5px;
+}
+
+#blood-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+
+
+.container-hell{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    transition: all .3s ease-out;
+}
+
+.container-hell:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #ff212166;
+}
+
+.hell-text-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.hell-text-title h3{
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.hell-text p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.hell-text{
+    float: right;
+    margin: 5px;
+}
+
+#hell-gif{
+    margin: 10px;
+    border-radius: 5px;
+    height: auto;
+}
+
+
+.specs{
+    font-size: 20px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.specs h3{
+    font-size: 28px;
+    text-align: center;
+}
+
+.specs p{
+    margin: 15px;
+}
+
+.specs ul{
+    list-style: none;
+}
+
+.specs ul p{
+    margin: 10px;
+}
+
+.specs li{
+    color: rgb(185, 185, 185);
+    display: inline;
+    float: left;
+}
+
+
+
+@media (max-width: 1600px) {
+    .container-mankind{
+        margin-right: 75px;
+    }
+
+    #mankind-gif{
+        width: 200%;
+    }
+
+    .container-blood{
+        margin-left: 75px;
+    }
+
+    #blood-gif{
+        width: 200%;
+    }
+
+    .container-hell{
+        margin-right: 75px;
+    }
+
+    #hell-gif{
+        width: 200%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-mankind{
+        margin-right: 25px;
+    }
+
+    .container-blood{
+        margin-left: 25px;
+    }
+
+    .container-hell{
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .container-mankind{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .mankind-text-title{
+        justify-content: center;
+    }
+
+    #mankind-gif{
+        width: auto;
+        height: auto;
+    }
+
+    .container-blood{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .blood-text-title{
+        justify-content: center;
+    }
+
+    #blood-gif{
+        width: auto;
+        height: auto;
+    }
+
+    .container-hell{
+        margin: auto;
+        margin-top: 50px;
+        min-width: 200px;
+        flex-direction: column;
+    }
+    .hell-text-title{
+        justify-content: center;
+    }
+
+    #hell-gif{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .main-container{
+        margin: 0;
+    }
+
+    .main-container h1{
+        font-size: 32px;
+    }
+
+    .logo img{
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
+
+    .mankind-text-title h3{
+        font-size: 26px;
+    }
+
+    .mankind-text p{
+        font-size: 16px;
+    }
+
+    .blood-text h3{
+        font-size: 26px;
+    }
+
+    .blood-text p{
+        font-size: 16px;
+    }
+
+    .hell-text h3{
+        font-size: 26px;
+    }
+
+    .hell-text p{
+        font-size: 16px;
+    }
+}
